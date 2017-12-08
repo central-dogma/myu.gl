@@ -31,7 +31,7 @@
 
 	<div class="middle-box text-center animated fadeInDown">
 		<div>
-			<h2>ゲーム</h2><h3><a href="/">トップ</a> | <a href="/pics">画像集</a> | <a href="/blog">ブログ</a></h3>
+			<h2>ゲーム</h2><h3><a href="/">トップ</a> | <a href="/pics">画像集</a> | <a href="/blog">ブログ</a></h3><canvas id="game_canvas" width="320" height="500">アレ...? ゲームはここにあるはず。ブラウザーは古いの？</canvas>
 		</div>
 	</div>
 
@@ -44,6 +44,7 @@
     <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
+    <script src="../js/game.js"></script>
 
 
 
@@ -57,6 +58,8 @@
 
 
 $( document ).ready(function() {
+
+		start_game( document.getElementById("game_canvas") )
 
 
 
